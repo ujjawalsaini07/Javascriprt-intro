@@ -124,3 +124,42 @@
 //     await getdata(4);
 //     await getdata(5);   
 // }
+
+// Try catch and finally -- mostly used for error handling part 
+// function fetchData() {
+//   let connection = null;
+//   try {
+//     console.log("Attempting to establish connection...");
+//     connection = "database_connection_successful"; // Simulate opening a connection
+
+//     // Simulate an error occurring sometimes
+//     const randomNumber = Math.random();
+//     if (randomNumber < 0.5) {
+//       throw new Error("Simulated network error during data fetch!");  // if error occur then the code beyound this wont be executed;
+//     }
+
+//     console.log("Data fetched successfully using:", connection);
+//     return "Data payload"; // Successful return
+
+//   } catch (error) {
+//     console.error("Error fetching data:", error.message);
+//     // You might log the error or return a default value/error object
+//     return null; // Indicate failure
+//   } finally {  // This code will always be executed regardless of error caught or not 
+//     // This code always runs, ensuring cleanup
+//     if (connection) {
+//       console.log("Closing connection:", connection);
+//       connection = null; // Simulate closing the connection
+//     }
+//     console.log("Fetch operation complete.");
+//   }
+// }
+
+// console.log("\n--- First Fetch Attempt (might succeed or fail) ---");
+// let result1 = fetchData();
+// console.log("Result of first fetch:", result1);
+
+// console.log("\n--- Second Fetch Attempt (might succeed or fail) ---");
+// let result2 = fetchData();
+// console.log("Result of second fetch:", result2);
+
