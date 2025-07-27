@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Currency Converter</h1>
+
+      <form class="form-spacing">
+        <!-- First Currency Input and Dropdown -->
+        <div class="form-field">
+          <input
+            type="number"
+            id="amount1"
+            placeholder="Enter amount"
+            class="form-input"
+            value="100"
+          />
+        </div>
+        <div class="currencys">
+          <select id="currency1" class="form-select">
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="JPY">¥ JPY</option>
+            <option value="CAD">C$ CAD</option>
+            <option value="AUD">A$ AUD</option>
+            <option value="CHF">CHF CHF</option>
+            <option value="CNY">¥ CNY</option>
+            <option value="INR" selected>₹ INR</option>
+            <option value="BRL">R$ BRL</option>
+            <option value="RUB">₽ RUB</option>
+            <option value="ZAR">R ZAR</option>
+            <option value="MXN">$ MXN</option>
+            <option value="SGD">S$ SGD</option>
+            <option value="HKD">HK$ HKD</option>
+            <option value="NZD">NZ$ NZD</option>
+            <option value="SEK">kr SEK</option>
+            <option value="NOK">kr NOK</option>
+            <option value="DKK">kr DKK</option>
+            <option value="KRW">₩ KRW</option>
+            <option value="TRY">₺ TRY</option>
+            <option value="SAR">ر.س SAR</option>
+            <option value="AED">د.إ AED</option>
+            <option value="EGP">E£ EGP</option>
+            <option value="PHP">₱ PHP</option>
+            <option value="IDR">Rp IDR</option>
+            <option value="THB">฿ THB</option>
+            <option value="VND">₫ VND</option>
+          </select>
+
+          <!-- Exchange Icon (Optional, for visual appeal) -->
+          <div class="exchange-icon-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="exchange-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+              />
+            </svg>
+          </div>
+
+          <select id="currency2" class="form-select">
+            <option value="USD" selected>$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="JPY">¥ JPY</option>
+            <option value="CAD">C$ CAD</option>
+            <option value="AUD">A$ AUD</option>
+            <option value="CHF">CHF CHF</option>
+            <option value="CNY">¥ CNY</option>
+            <option value="INR">₹ INR</option>
+            <option value="BRL">R$ BRL</option>
+            <option value="RUB">₽ RUB</option>
+            <option value="ZAR">R ZAR</option>
+            <option value="MXN">$ MXN</option>
+            <option value="SGD">S$ SGD</option>
+            <option value="HKD">HK$ HKD</option>
+            <option value="NZD">NZ$ NZD</option>
+            <option value="SEK">kr SEK</option>
+            <option value="NOK">kr NOK</option>
+            <option value="DKK">kr DKK</option>
+            <option value="KRW">₩ KRW</option>
+            <option value="TRY">₺ TRY</option>
+            <option value="SAR">ر.س SAR</option>
+            <option value="AED">د.إ AED</option>
+            <option value="EGP">E£ EGP</option>
+            <option value="PHP">₱ PHP</option>
+            <option value="IDR">Rp IDR</option>
+            <option value="THB">฿ THB</option>
+            <option value="VND">₫ VND</option>
+          </select>
+        </div>
+
+        <!-- Second Currency Input and Dropdown -->
+        <div class="form-field">
+          <input
+            type="number"
+            id="amount2"
+            placeholder="Converted amount"
+            class="form-input"
+            readonly
+          />
+        </div>
+
+        <!-- Convert Button -->
+        <div class="convert-button-container">
+          <button type="button" class="convert-button">Convert</button>
+        </div>
+      </form>
+    </div>
+    <script src="country.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
