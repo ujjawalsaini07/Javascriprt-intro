@@ -125,6 +125,15 @@
 //     await getdata(5);   
 // }
 
+
+// IIFE -- immediately executed funtion 
+// This are funtion that are used once and are executed without a call 
+// (function namefuntion(){
+//   // funtion operation -- > this funtion will run without calling funtion can be arrow or any 
+// })();
+
+
+
 // Try catch and finally -- mostly used for error handling part 
 // function fetchData() {
 //   let connection = null;
@@ -143,6 +152,7 @@
 
 //   } catch (error) {
 //     console.error("Error fetching data:", error.message);
+//     console.error("Error name:", error.name);
 //     // You might log the error or return a default value/error object
 //     return null; // Indicate failure
 //   } finally {  // This code will always be executed regardless of error caught or not 
@@ -162,4 +172,21 @@
 // console.log("\n--- Second Fetch Attempt (might succeed or fail) ---");
 // let result2 = fetchData();
 // console.log("Result of second fetch:", result2);
+
+// Be careful with return statements inside a finally block. If finally contains a return statement, it will override any return statement in the try or catch blocks. This is generally discouraged as it can lead to unexpected behavior and make your code harder to debug.
+
+
+//You can't have multiple catch blocks for different error types directly like some other languages. However, you can use if...else if statements within a single catch block to differentiate:
+// catch (error) {
+//     if (error instanceof SyntaxError) {
+//       console.error("JSON Syntax Error:", error.message);
+//     } else if (error instanceof TypeError) {
+//       console.error("Type Error:", error.message);
+//     } else if (error instanceof ReferenceError) {
+//         console.error("Reference Error:", error.message);
+//     }
+//     else {
+//       console.error("An unknown error occurred:", error);
+//     }
+
 
