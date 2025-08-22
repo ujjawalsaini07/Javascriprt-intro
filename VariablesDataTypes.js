@@ -38,7 +38,7 @@ console.log(typeof symbol1);
 // object --> a collection of key value pair 
 
 const student = {
-    fullname : "ujjawal",
+    fullname : "ujjawal",    // every object has a bydefault created inherited object the Prototype in js Almost everything is a OBJECT
     cgpa : 6.23,
     ispass : false,
 }

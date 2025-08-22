@@ -26,15 +26,18 @@
 
 //                                 ------strings------
 
-let str = "ujjawal";
+// let str = "ujjawal";
 
-// string in javascript are immutabe we can not update the value at any paticular index what we can do is crete a new string and copy it in the previous one 
+// string in javascript are immutabe we can no``t update the value at any paticular index what we can do is crete a new string and copy it in the previous one 
 
 // str.length -- > return the length of sting 
 
 // indices of a sting   str[0], str[1];
 
-// template litterals    let var = `this is a template litterar ${var1} ${var2} it convers the variables and expression in string only`;
+// template litterals    
+// let var1 = 1;
+// let var2 = true;
+// let strings = `this is a template litterar ${var1} ${var2} it convers the variables and expression in string only`;
 
 // escape charecters /n /t  the are a single charecter not 2 diffrent charecters 
 
